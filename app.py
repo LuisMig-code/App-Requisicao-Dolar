@@ -38,4 +38,4 @@ def index():
     return render_template('index.html' , alta = dados_alta , baixa = dados_baixa , cotacao = dados_cotacao , var = dados_var , timestamp = dados_timestamp , created_date = dados_create_date)
 
 if __name__ == '__main__':
-    app.run(debug=True , port=8080)
+    app.run(debug=True, port=8080, host='0.0.0.0')
