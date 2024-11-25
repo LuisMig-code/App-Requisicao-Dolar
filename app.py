@@ -14,7 +14,7 @@ dados_cotacao = None
 
 def realizaReqCambio():
     # Faz uma requisição para a API
-    response = requests.get(f'https://economia.awesomeapi.com.br/last/USD')
+    response = requests.get('https://economia.awesomeapi.com.br/last/USD')
     if response.status_code == 200:
         dados = response.json()
         dados = dados['USDBRL']
