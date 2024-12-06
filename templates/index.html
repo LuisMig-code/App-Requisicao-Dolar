@@ -3,25 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Requisição</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel="icon" type="image/x-icon" href="../static/img/fav-icon.png">
+    <title>Cotação do Dólar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
 </head>
+
 <body>
+    <div class="container mt-5">
+        <!-- Banner -->
+        <div class="banner">
+            Cotação do Dólar
+        </div>
 
-    <h1>Requisição:</h1>
-    <h2>Cotação Dólar - Real</h2>
-    <br>
-    <span>Resultados da requisição:</span>
-    <ul>
-        <li>Alta: R$ {{alta}}</li>
-        <li>Baixa: R$ {{baixa}}</li>
-        <li>Var: {{var}}</li>
-        <li>Cotação: R$ {{cotacao}}</li>
-        <li>Última atualização: {{created_date}}</li>
-    </ul>
+        <!-- Cotação Card -->
+        <div class="card mx-auto" style="max-width: 800px;">
+            <div class="card-body">
+                <ul class="list-unstyled">
+                    <li>Alta: <span class="highlight">R$ {{alta}}</span></li>
+                    <li>Baixa: <span class="highlight">R$ {{baixa}}</span></li>
+                    <li>Var: <span class="highlight">{{var}}</span></li>
+                    <li>Cotação: <span class="highlight">R$ {{cotacao}}</span></li>
+                    <li>Última atualização: <span class="highlight">{{created_date}}</span></li>
+                </ul>
+            </div>
+        </div>
 
-<script src="../static/scripts.js"></script>
+        <!-- Banner Inferior -->
+        <div class="banner-2 mt-4">
+            <img src="../static/img/banner.jpg" alt="Minha Imagem" class="img-banner" />
+        </div>
 
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Cotação do Dólar - Todos os direitos reservados</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
